@@ -1,0 +1,35 @@
+﻿-- SP para adicionar um novo funcionario
+CREATE PROCEDURE SP_InserirFuncionario
+    @ID UNIQUEIDENTIFIER,
+	@NOME VARCHAR(120),
+	@MATRICULA VARCHAR(50),
+	@CPF VARCHAR(14)
+AS
+BEGIN
+    INSERT INTO [FUNCIONARIO] (ID, NOME, MATRICULA, CPF)
+    VALUES (@ID, @NOME, @MATRICULA, @CPF);
+END;
+
+-- SP para alterar um novo funcionario
+CREATE PROCEDURE SP_AlterarFuncionario
+	@ID UNIQUEIDENTIFIER,
+	@NOME VARCHAR(120),
+	@MATRICULA VARCHAR(50),
+	@CPF VARCHAR(14)
+AS
+BEGIN
+	UPDATE [FUNCIONARIO]
+    SET NOME = @NOME,
+        MATRICULA = @MATRICULA,
+        CPF =@CPF
+    WHERE ID = @ID;
+END;
+
+-- SP para alterar um novo funcionario
+CREATE PROCEDURE SP_ExcluirFuncionario
+	 @ID UNIQUEIDENTIFIER
+AS
+BEGIN
+	DELETE FROM [FUNCIONARIO]
+    WHERE ID = @ID;
+END;
