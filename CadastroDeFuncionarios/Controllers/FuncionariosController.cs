@@ -64,7 +64,7 @@ namespace CadastroDeFuncionarios.Controllers
             Console.WriteLine($"ID .............: {funcionario.Id}");
             Console.WriteLine($"NOME ...........: {funcionario.Nome}");
             Console.WriteLine($"MATRICULA ......: {funcionario.Matricula}");
-            Console.WriteLine($"CPF ............: {funcionario.Cpf}");
+            Console.WriteLine($"CPF ............: {funcionario.CpfFormatado}");
 
             Console.WriteLine("==================================================================");
 
@@ -113,7 +113,7 @@ namespace CadastroDeFuncionarios.Controllers
             Console.WriteLine($"ID .............: {funcionario.Id}");
             Console.WriteLine($"NOME ...........: {funcionario.Nome}");
             Console.WriteLine($"MATRICULA ......: {funcionario.Matricula}");
-            Console.WriteLine($"CPF ............: {funcionario.Cpf}");
+            Console.WriteLine($"CPF ............: {funcionario.CpfFormatado}");
 
             Console.WriteLine("==================================================================");
 
@@ -148,7 +148,7 @@ namespace CadastroDeFuncionarios.Controllers
                 Console.WriteLine($"ID .............: {funcionario.Id}");
                 Console.WriteLine($"NOME ...........: {funcionario.Nome}");
                 Console.WriteLine($"MATRICULA ......: {funcionario.Matricula}");
-                Console.WriteLine($"CPF ............: {funcionario.Cpf}");
+                Console.WriteLine($"CPF ............: {funcionario.CpfFormatado}");
 
                 Console.WriteLine("==================================================================");
             }
@@ -171,7 +171,7 @@ namespace CadastroDeFuncionarios.Controllers
                 Console.WriteLine($"ID .............: {funcionario.Id}");
                 Console.WriteLine($"NOME ...........: {funcionario.Nome}");
                 Console.WriteLine($"MATRICULA ......: {funcionario.Matricula}");
-                Console.WriteLine($"CPF ............: {funcionario.Cpf}");
+                Console.WriteLine($"CPF ............: {funcionario.CpfFormatado}");
 
                 Console.WriteLine("==================================================================");
             }

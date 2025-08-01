@@ -23,5 +23,18 @@ namespace CadastroDeFuncionarios.Entities
         [Length(11, 11, ErrorMessage = "O CPF deve ter exatamente 11 digitos.")]
         [Required(ErrorMessage = "O CPF do funcionário é obrigatório.")]
         public string? Cpf { get; set; }
+
+        // Propriedade somente leitura para exibir o CPF formatado
+        public string? CpfFormatado
+        {
+            get
+            {
+                if (string.IsNullOrEmpty(Cpf) || Cpf.Length != 11)
+                    return Cpf;
+
+                // Formata o CPF no padrão XXX.XXX.XXX-XX
+                return $"{Cpf.Substring(0, 3)}.{Cpf.Substring(3, 3)}.{Cpf.Substring(6, 3)}-{Cpf.Substring(9, 2)}";
+            }
+        }
     }
 }

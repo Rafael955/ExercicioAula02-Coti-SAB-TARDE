@@ -6,7 +6,8 @@ try
 {
     FuncionariosController funcionariosController = new FuncionariosController();
 
-    Console.WriteLine("**** PROGRAMA CADASTRO DE FUNCIONÁRIOS ****");
+    Console.WriteLine("\t\t\t\t**** PROGRAMA CADASTRO DE FUNCIONÁRIOS ****");
+    Console.WriteLine("\n\t\t\t\t\t**** MENU DE OPÇÕES ****");
     Console.WriteLine("\n\t[1] ADICIONAR FUNCIONÁRIO // [2] ALTERAR FUNCIONÁRIO // [3] EXCLUIR FUNCIONÁRIO");
     Console.WriteLine("\n\t[4] PESQUISAR FUNCIONÁRIO // [5] LISTAR FUNCIONÁRIOS CADASTRADOS // [6] SAIR DO PROGRAMA");
     Console.Write("\nINFORME A OPÇÃO ...: ");
@@ -34,6 +35,9 @@ try
             Console.WriteLine("\nPROGRAMA FINALIZADO!");
             Thread.Sleep(3000);
             return;
+        default:
+            Console.WriteLine("\nOPÇÃO INVÁLIDA! TENTE NOVAMENTE.");
+            break;
     }
 }
 catch (Exception ex)
